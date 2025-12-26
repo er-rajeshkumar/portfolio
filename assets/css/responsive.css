@@ -1,0 +1,151 @@
+/* =========================
+   TABLET (≤ 992px)
+   ========================= */
+
+@media (max-width: 992px) {
+
+    .hero-content h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.35rem;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .projects-grid {
+        gap: 20px;
+    }
+}
+
+/* =========================
+   SMALL TABLET / LARGE MOBILE (≤ 768px)
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    /* HERO */
+    .hero {
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-links {
+        margin-top: 10px;
+    }
+
+    /* SECTIONS */
+    .section-title {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .section-title::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-text {
+        text-align: center;
+    }
+
+    /* SKILLS */
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* EXPERIENCE */
+    .timeline-item {
+        padding: 20px;
+    }
+
+    /* CONTACT */
+    .contact-links {
+        align-items: center;
+    }
+}
+
+/* =========================
+   MOBILE (≤ 480px)
+   ========================= */
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    /* HERO */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.05rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* NAVBAR */
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    /* CARDS */
+    .skill-card,
+    .project-card,
+    .timeline-item {
+        padding: 18px;
+    }
+
+    /* FOOTER */
+    .footer p {
+        font-size: 0.8rem;
+    }
+}
