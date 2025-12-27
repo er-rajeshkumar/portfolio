@@ -29,7 +29,6 @@
   </head>
 
   <body>
-
     <!-- ================= NAVBAR ================= -->
     <header class="navbar">
       <div class="container nav-container">
@@ -56,7 +55,6 @@
         </nav>
       </div>
     </header>
-
 
     <!-- ================= HERO ================= -->
     <section class="hero">
@@ -90,11 +88,10 @@
       </div>
     </section>
 
-    
     <!-- Scroll Progress Bar -->
-<div id="scroll-progress-container">
-    <div id="scroll-progress-bar"></div>
-</div>
+    <div id="scroll-progress-container">
+      <div id="scroll-progress-bar"></div>
+    </div>
     <!-- ================= ABOUT ================= -->
     <section id="about" class="section">
       <div class="container">
@@ -272,21 +269,37 @@
 
     <!-- ================= CONTACT ================= -->
     <section id="contact" class="section dark">
-      <div class="container">
-        <h3 class="section-title">Contact</h3>
-        <p>
-          Interested in backend engineering, machine learning opportunities, or
-          collaboration? Feel free to reach out.
-        </p>
+      <div class="container contact-grid">
+        <!-- LEFT: Contact Info -->
+        <div class="contact-info">
+          <h3 class="section-title">Contact</h3>
+          <p>
+            Interested in backend engineering, machine learning opportunities,
+            or collaboration? Feel free to reach out.
+          </p>
 
-        <div class="contact-links">
-          <a href="mailto:er.rajeshkumar.dev@gmail.com"
-            >er.rajeshkumar.dev@gmail.com</a
+          <div class="contact-links">
+            <a href="mailto:er.rajeshkumar.dev@gmail.com">
+              er.rajeshkumar.dev@gmail.com
+            </a>
+            <a href="https://github.com/er-rajeshkumar" target="_blank"
+              >GitHub</a
+            >
+            <a href="https://linkedin.com/in/er-rajeshkumar" target="_blank">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Google Form -->
+        <div class="contact-form">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSel2NIKCrZR7HNlMiPOCO4pjbZXW6FCeCJ0EQ5Uw-eZKGGqxw/viewform?embedded=true"
+            loading="lazy"
+            frameborder="0"
           >
-          <a href="https://github.com/er-rajeshkumar" target="_blank">GitHub</a>
-          <a href="https://linkedin.com/in/er-rajeshkumar" target="_blank"
-            >LinkedIn</a
-          >
+            Loading…
+          </iframe>
         </div>
       </div>
     </section>
@@ -300,5 +313,7 @@
 
     <!-- JS -->
     <script src="assets/js/main.js"></script>
+    <div id="magic-cursor"></div>
+
   </body>
 </html>

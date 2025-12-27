@@ -106,3 +106,48 @@ window.addEventListener('scroll', () => {
 
     progressBar.style.width = `${scrollPercent}%`;
 });
+
+
+/* =========================
+   MAGIC CURSOR + SPARKLES (SAFE)
+   ========================= */
+
+const cursor = document.getElementById('magic-cursor');
+
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+});
+
+/* =========================
+   MAGIC CURSOR – FINAL
+   ========================= */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cursor = document.getElementById('magic-cursor');
+
+    if (!cursor || window.innerWidth <= 768) return;
+
+    document.body.classList.add('magic-cursor-enabled');
+
+    let sparkleCooldown = false;
+
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+
+        if (!sparkleCooldown) {
+            sparkleCooldown = true;
+
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.style.left = e.clientX + 'px';
+            sparkle.style.top = e.clientY + 'px';
+
+            document.body.appendChild(sparkle);
+
+            setTimeout(() => sparkle.remove(), 700);
+            setTimeout(() => sparkleCooldown = false, 35);
+        }
+    });
+});

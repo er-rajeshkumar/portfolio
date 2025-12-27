@@ -149,3 +149,12 @@
         font-size: 0.8rem;
     }
 }
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form iframe {
+        min-height: 520px;
+    }
+}
